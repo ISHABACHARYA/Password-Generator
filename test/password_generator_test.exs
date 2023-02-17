@@ -16,7 +16,6 @@ defmodule PasswordGeneratorTest do
        lowercase: Enum.map(?a..?z, & <<&1>>),
     }
     {:ok, result}  = PasswordGenerator.generate(options)
-    IO.puts('test --- setup')
     %{options_type: options_type, result: result}
   end
 
